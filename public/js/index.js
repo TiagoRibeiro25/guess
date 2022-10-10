@@ -1,4 +1,5 @@
 let username;
+const btnAudio = new Audio("../audio/button.mp3");
 
 function updateButtons(status) {
   buttons.forEach((button) => {
@@ -19,6 +20,7 @@ function resetGame() {
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
+  btnAudio.play();
 
   // get the username from the DOM
   username = document.querySelector("#name").value;
@@ -71,6 +73,8 @@ buttons.forEach((button) => {
   const letter = button.innerText;
 
   button.addEventListener("click", async () => {
+    btnAudio.play();
+
     const response = await fetch("/guess", {
       method: "POST",
       headers: {
@@ -113,5 +117,6 @@ buttons.forEach((button) => {
 updateButtons(true);
 
 document.querySelector("#play-again").addEventListener("click", () => {
+  btnAudio.play();
   resetGame();
 });
