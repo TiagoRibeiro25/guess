@@ -1,0 +1,264 @@
+body {
+  background-color: #0e1217;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.42857143;
+  color: white;
+}
+
+h1 {
+  color: #cedbfa;
+  margin-top: 15px;
+}
+
+header,
+main {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 85%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: #1c1f26;
+  border: 1px solid #383d47;
+  border-radius: 15px;
+  padding: 15px;
+  color: #a8b3cf;
+}
+
+form {
+  background-color: #323744;
+  padding: 15px;
+  border-radius: 15px;
+  color: #a8b3cf;
+}
+
+form > input {
+  background-color: #1c1f26;
+  border: 1px solid #383d47;
+  border-radius: 15px;
+  padding: 15px;
+  color: #a8b3cf;
+  width: 50%;
+  margin: 5px;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+
+form > input:focus,
+form > input:hover {
+  outline: none;
+  border: 1px solid #cedbfa;
+  transition: 0.5s;
+}
+form > input:focus {
+  color: #cedbfa;
+}
+
+form > input[type="submit"] {
+  cursor: pointer;
+  width: 20%;
+  transition: 0.5s;
+}
+
+form > input[type="submit"]:hover {
+  border: 1px solid #cedbfa;
+  color: #cedbfa;
+  scale: 1.03;
+  transition: 0.5s;
+}
+form > input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+form > input:disabled:hover {
+  border: 1px solid #383d47;
+  color: #a8b3cf;
+  scale: 1;
+  transition: 0.5s;
+}
+
+.extra-info > a {
+  color: #cedbfa;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.extra-info > a:hover {
+  color: #fff;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.username,
+.guesses,
+.country {
+  color: #cedbfa;
+  margin: 0;
+  padding: 0;
+}
+
+.country {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 85%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: #1c1f26;
+  border: 1px solid #383d47;
+  border-radius: 15px;
+  padding: 15px;
+  color: #a8b3cf;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #323744;
+  color: #a8b3cf;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.key:hover {
+  background-color: #383d47;
+  color: #cedbfa;
+  border: 1px solid #cedbfa;
+  scale: 1.01;
+  transition: 0.5s;
+}
+
+.key:active {
+  background-color: #383d47;
+  color: #cedbfa;
+  scale: 1.03;
+  transition: 0.5s;
+}
+
+.key:disabled {
+  background-color: #383d47;
+  color: #a8b3cf;
+  cursor: not-allowed;
+}
+
+.key:disabled:hover {
+  background-color: #383d47;
+  color: #a8b3cf;
+  cursor: not-allowed;
+}
+
+.result {
+  display: none;
+}
+
+.result > span {
+  display: block;
+  color: #cedbfa;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.result > button {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: #1c1f26;
+  border: 1px solid #383d47;
+  border-radius: 15px;
+  padding: 10px;
+  color: #a8b3cf;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.result > button:hover {
+  background-color: #383d47;
+  color: #cedbfa;
+  border: 1px solid #cedbfa;
+  scale: 1.01;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 700px) {
+  form > input {
+    width: 80%;
+  }
+  form > input[type="submit"] {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .row {
+    width: 100%;
+  }
+
+  .key {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .key {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .key {
+    width: 25px;
+    height: 25px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .key {
+    width: 20px;
+    height: 20px;
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  .key {
+    width: 15px;
+    height: 15px;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .key {
+    width: 10px;
+    height: 10px;
+    font-size: 0.4rem;
+  }
+}

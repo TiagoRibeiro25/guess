@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Guess the Country</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Guess the Country</h1>
+      <p class="info">
+        This is a simple hangman like game where you have to guess the name
+        of the country. You have 5 chances to guess the correct name. If
+        you guess wrong, you will lose a chance. If you lose all your
+        chances, you will lose the game.
+      </p>
+      <p class="extra-info">
+        This game is made using HTML, CSS and JavaScript. Click
+        <a href="#" target="_blank">here</a> to see the source code. Made
+        by
+        <a href="https://github.com/TiagoRibeiro25" target="_blank"
+          >25GOLD25</a
+        >.
+      </p>
+    </header>
+    <main>
+      <form>
+        <label for="name">
+          To start the game, enter your name and click on the start button.
+        </label>
+        <br />
+        <input type="text" id="name" placeholder="Your name..." required />
+        <input type="submit" value="Start" id="submit" />
+      </form>
+
+      <div class="game-info">
+        <p id="username"></p>
+        <p id="guesses"></p>
+        <p class="country" id="country"></p>
+        <div class="result" id="result">
+          <span id="result-msg"></span>
+          <button id="play-again">Play Again</button>
+        </div>
+      </div>
+
+      <div class="keyboard">
+        <div class="row">
+          <button class="key">q</button>
+          <button class="key">w</button>
+          <button class="key">e</button>
+          <button class="key">r</button>
+          <button class="key">t</button>
+          <button class="key">y</button>
+          <button class="key">u</button>
+          <button class="key">i</button>
+          <button class="key">o</button>
+          <button class="key">p</button>
+        </div>
+        <div class="row">
+          <button class="key">a</button>
+          <button class="key">s</button>
+          <button class="key">d</button>
+          <button class="key">f</button>
+          <button class="key">g</button>
+          <button class="key">h</button>
+          <button class="key">j</button>
+          <button class="key">k</button>
+          <button class="key">l</button>
+        </div>
+        <div class="row">
+          <button class="key">z</button>
+          <button class="key">x</button>
+          <button class="key">c</button>
+          <button class="key">v</button>
+          <button class="key">b</button>
+          <button class="key">n</button>
+          <button class="key">m</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
