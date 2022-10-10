@@ -221,44 +221,22 @@ form > input:disabled:hover {
     height: 40px;
     font-size: 1.2rem;
   }
+
+  .keyboard {
+    padding: 5px;
+  }
 }
 
 @media screen and (max-width: 710px) {
+  .row {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .key {
     width: 30px;
     height: 30px;
     font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 572px) {
-  .key {
-    width: 25px;
-    height: 25px;
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .key {
-    width: 20px;
-    height: 20px;
-    font-size: 0.6rem;
-  }
-}
-
-@media screen and (max-width: 437px) {
-  .key {
-    width: 15px;
-    height: 15px;
-    font-size: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .key {
-    width: 10px;
-    height: 10px;
-    font-size: 0.4rem;
+    margin: 3px;
   }
 }
