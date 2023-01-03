@@ -1,3 +1,3 @@
 # Guess the Country's name
 
-Live Demo: https://guess-country.up.railway.app/
+Live Demo: https://guess-country.cyclic.app/
