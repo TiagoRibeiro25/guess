@@ -101,7 +101,7 @@ app.post(`/guess`, (request, response) => {
 
     response.json({
       status: "game-over",
-      data: "You Lost",
+      data: `You Lost, the country was "${country}"`,
     });
     console.log(`User "${currentUser}" lost`);
     return;
