@@ -20,12 +20,9 @@ app.use(express.json());
  */
 function getCountryUnsolved(country) {
   const countryUnsolved = [];
-  for (let i = 0; i < country.length; i++) {
-    if (country[i] === " ") {
-      countryUnsolved.push("-");
-    } else {
-      countryUnsolved.push("_");
-    }
+  for (const element of country) {
+    if (element === " ") countryUnsolved.push("-");
+    else countryUnsolved.push("_");
   }
   return countryUnsolved;
 }
